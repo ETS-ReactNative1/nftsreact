@@ -1,0 +1,14 @@
+:root{
+--body:0.4;
+--vcol:215;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 30px;
+  font-family: sans-serif;
+background-color: rgba(var(--vcol),var(--vcol),var(--vcol),0.5);
+}

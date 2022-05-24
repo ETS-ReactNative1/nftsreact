@@ -1,0 +1,63 @@
+$carousel-ratio: 2.1;
+$child-ratio: 1.2;
+$perspective: 6000px;
+$transition: 1s;
+
+@import './jquery.carousel-3d.scss';
+
+//background
+[data-carousel-3d] {
+  background: linear-gradient(0deg, rgb(200,200,200), rgb(255,255,255), rgb(200,200,200),0 );
+  background: -ms-linear-gradient(0deg, rgb(200,200,200), rgb(255,255,255), rgb(200,200,200),0);
+  background: -moz-linear-gradient(0deg, rgb(200,200,200), rgb(255,255,255), rgb(200,200,200),0);
+  background: -webkit-linear-gradient(0deg, rgb(200,200,200), rgb(255,255,255), rgb(200,200,200),0);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#ffffff',GradientType=0 );
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#ffffff',GradientType=0 );
+}
+
+//border
+[data-carousel-3d] {
+  border: none;
+vertical-align: bottom;
+}
+
+//next/prev
+[data-carousel-3d] {
+  [data-prev-button] {
+    &:before {
+      content: url("./images/default/prev.png");
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 43px;
+      height: 49px;
+      margin: auto;
+      opacity: 0.2;
+    }
+  }
+  [data-next-button] {
+    &:before {
+      content: url("./images/default/next.png");
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 43px;
+      height: 49px;
+      margin: auto;
+      opacity: 0.2;
+    }
+  }
+}
+
+[data-child-frame] {
+box-shadow: 0px 1px 1px 0px rgba(54, 54, 54, 0.6), 1px 10px 10px 2px rgba(71, 71, 71, 0.6);
+border-right: 40px solid rgba(0,0,0,1);
+border-left: 40px solid rgba(0,0,0,1);
+border-top: 60px solid rgba(0,0,0,1);
+border-bottom: 40px solid rgba(0,0,0,1);
+border-radius: 10px;
+}
